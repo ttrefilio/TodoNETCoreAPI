@@ -14,7 +14,7 @@ namespace Project.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(maxLength: 50, nullable: false),
                     Description = table.Column<string>(maxLength: 300, nullable: false),
-                    Done = table.Column<bool>(nullable: false)
+                    IsDone = table.Column<bool>(nullable: false)
                 },
                 constraints: table =>
                 {
